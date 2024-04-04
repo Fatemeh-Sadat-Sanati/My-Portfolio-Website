@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Personal portfolio Website</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="/Assets/logo3.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#content">Contact</a></li>
+            <img
+              class="icons"
+              src="/Assets/xmark-solid.svg"
+              onclick="closemenu()"
+            />
+          </ul>
+          <img
+            class="icons"
+            src="/Assets/bars-solid.svg"
+            onclick="openmenu()"
+          />
+        </nav>
+        <div class="header-text">
+          <p>Front-End Developer</p>
+          <h1>Hi, I'm Fatemeh Sadat <br />Sanati From Iran.</h1>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------About Me------------------------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/Assets/Screenshot 2023-11-18 114222.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a graduate of Information Technology from Ferdowsi University
+              of Mashhad. With the knowledge I gained about myself in the
+              university, I realized that I have talent and ability in the field
+              of programming and code analysis. Therefore, I have been following
+              this path seriously for about a year and now I am interested in
+              increasing my activity and skills in the field of front-end
+              professionally. I have recently completed Mr. Sahib Mohammadi's
+              HTML, CSS and JS course on Fronthooks site and I am learning React
+              course; I am also eager to follow this path as an internship to
+              achieve my goal as a front-end developer with more experience and
+              knowledge.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li><span>HTML</span></li>
+                <li><span>CSS</span></li>
+                <li><span>JAVASCRIPT</span></li>
+                <li><span>REACT</span></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li><span>Meta Front-End Certificate in Coursera</span></li>
+                <li><span>make 3 websites</span></li>
+                <li>
+                  <span
+                    >pass Html,Css,JS,React course by Saheb Mohammadi on
+                    <a href="https://fronthooks.ir/" target="_blank"
+                      >fronthooks.ir</a
+                    ></span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------------------Contact-------------------------------- -->
+    <div id="content">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <img
+                src="/Assets/envelope-solid.svg"
+                width="20px"
+                height="20px"
+              />fa.sanati99@gmail.com
+            </p>
+            <p><img src="/Assets/phone-solid.svg" />+989154157121</p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/fatemeh-sadat99"
+                target="_blank"
+                ><img src="/Assets/linkedin.svg" width="30px" height="30px"
+              /></a>
+              <a href="http://github.com/Fatemeh-Sadat-Sanati" target="_blank"
+                ><img src="/Assets/github.svg"/ width="30px" height="30px"></a
+              >
+            </div>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy Fatemeh-Sadat-Sanati</p>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
